@@ -5,6 +5,12 @@ module.exports = defineConfig({
   ]
 });
 
+module.exports ={
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/usermanagement-app/'
+      : '/'
+}
+
 module.exports = {
   css: {
     loaderOptions: {
